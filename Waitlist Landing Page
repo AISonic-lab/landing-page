@@ -7,18 +7,33 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
+            display: flex;
+            align-items: center;
             background: white;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 700px;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            background: url('job-assistant-icon.png') no-repeat center;
+            background-size: cover;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 1;
+            text-align: left;
         }
         h1 {
             color: #333;
@@ -42,9 +57,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Landing Page</h1>
-        <p>Sign up today and be the first to access our exclusive content!</p>
-        <a href="#" class="cta-button">Get Started</a>
+        <div class="icon"></div>
+        <div class="content">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Sign up today and be the first to access our exclusive content!</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
     </div>
 </body>
 </html>
